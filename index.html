@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+/>
+
+
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="images/logo.jpeg" alt="Logo" class="logo" />
+      <p class="tagline">Welcome to My Portfolio</p>
+    </div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>    
+  </header>
+  
+  <section class="hero">
+    <h2>Creative. Strategic. Digital.</h2>
+    <p>A social media manager/Web developer/designer/creator.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="images/Profile Image1.jpeg" alt="Evelyn Ashaolu" class="profile-photo" />
+  
+      <div class="about-text">
+        <p>
+          Hi! I'm <strong>Evelyn Ashaolu</strong>, a passionate and creative digital professional with a solid background in social media management, content creation, and brand storytelling. Over the years, I’ve worked across multiple industries, helping brands grow their online presence and connect with audiences meaningfully.
+        </p>
+        <p>
+          I'm currently focused on <strong>Front-End Development</strong>, where I bring ideas to life through clean, responsive, and interactive user interfaces. My tools of choice include <strong>HTML, CSS, JavaScript, Tailwind, CSS, React, and Git</strong>. I'm constantly learning and love turning designs into accessible, high-performing websites.
+        </p>
+        <p>
+          I have a keen eye for detail, a strong design sense, and a user-first mindset. I enjoy working in collaborative teams and am always eager to take on new challenges that allow me to blend creativity and code.
+        </p>
+        <a href="assets/Evelyn_Ashaolu_Digital_CV.pdf.pdf" class="resume-btn" download>📄 Download My Resume</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="form-message"></p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-gallery">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>Short description of project one.</p>
+        <a href="https://yourprojectlink.com" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Short description of project two.</p>
+        <a href="https://yourprojectlink.com" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills-education">
+    <h2>More About Me</h2>
+    <div class="toggle-buttons">
+      <button onclick="showInfo('skills')">Skills</button>
+      <button onclick="showInfo('education')">Education</button>
+    </div>
+    <div id="skills" class="info-section">
+      <h2>Technical Skills</h2>
+    <ul>
+      <li>HTML5, CSS3, JavaScript (ES6+)</li>
+      <li>TailwindCSS, Bootstrap (basic)</li>
+      <li>React (Basics and components)</li>
+      <li>Responsive Web Design & Accessibility</li>
+      <li>Version Control (Git & GitHub)</li>
+      <li>Basic SEO for front-end</li>
+    </ul>
+
+    <h2>Tools & Platforms</h2>
+    <ul>
+      <li>Canva, Figma (basic)</li>
+      <li>Trello, Notion</li>
+      <li>Microsoft Office Suite</li>
+      <li>Google Workspace (Docs, Sheets, Slides, Drive)</li>
+      <li>Slack, Zoom, Google Meet</li>
+    </ul>
+
+    <h2>Soft Skills</h2>
+    <ul>
+      <li>Attention to detail</li>
+      <li>Creative problem-solving</li>
+      <li>Team collaboration</li>
+      <li>Adaptability</li>
+      <li>Clear communication</li>
+    </ul>
+    </div>
+    <div id="education" class="info-section" style="display: none;">
+      <ul>
+        <li>Bachelor of Agriculture – Bayero University Kano</li>
+        <li>Front End Certificate – Coursera</li>
+      </ul>
+    </div>
+  </section>
+  
+  
+
+  <footer style="text-align: center; margin-top: 2rem;">
+    <h3>Connect with me</h3>
+    <div style="font-size: 1.5rem;">
+      <a href="https://www.instagram.com/evaashley_/" target="_blank" style="margin: 0 10px; color: #E4405F;">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/EvaAshaolu/" target="_blank" style="margin: 0 10px; color: #3b5998;">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/evelyn-ashaolu-3190b6236/" target="_blank" style="margin: 0 10px; color: #0A66C2;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Evelyn Ashaolu. All rights reserved.</p>
+  </footer>
+  
+
+  <script src="script.js"></script>
+  <script>
+    function showInfo(type) {
+      document.getElementById('skills').style.display = type === 'skills' ? 'block' : 'none';
+      document.getElementById('education').style.display = type === 'education' ? 'block' : 'none';
+    }
+  </script>
+  
+</body>
+</html>
